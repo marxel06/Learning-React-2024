@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    box-sizing: border-box;
+}
+
+@layer components{
+    
+    @font-face {
+        font-family: "Inter";
+        src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+    
+    .button{
+        @apply block w-max py-4 px-12 ;
+    }
+    .wrapper{
+        @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+    }
+
+    .new-area{
+        grid-template-areas:
+        "heroImg heroImg aside"
+        "heroTitle readMe"
+    }
+
+    .new-area-mobile{
+        grid-template-areas:
+        "hero hero"
+        "heroTitle"
+        "readMe readMe"
+        "aside aside"
+        ;
+    }
+
+}
